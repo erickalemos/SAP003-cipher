@@ -4,24 +4,38 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    
   </head>
   <body>
     <div id="root">
       <h1>Hello world!</h1>
     </div>
-    <form>
-      <label>CODIFICAR</label>
-      <input type="text" placeholder="Digite sua mensagem aqui" id ="codificar"><br>
-      <label>DECODIFICAR</label>
-      <input type="text" placeholder="Digite sua mensagem aqui" id ="decodificar"><br>
+    <div id="one">
+      <form>
+        <label>CODIFICAR</label>
+        <input type="text" placeholder="Digite sua mensagem aqui" id ="codificar"><br>
+      </form>
+    </div>
+    <div id = "two">
+      <form>  
+        <label>DECODIFICAR</label>
+        <input type="text" placeholder="Digite sua mensagem aqui" id ="decodificar"><br>
+      </form>
+  </div>
+  <div id = "three">
+    <form>  
       <label>CHAVE DE DESLOCAMENTO</label><br>
       <input type="number" placeholder="Digite sua chave" id="offset"><br>
       <button type="button" id="btn" onclick= "clique();clique2()"> Enviar</button>
      <!--<input type="submit" id="botão" = value ="enviar" onclick="clique()"/> <br> -->
-    </form>
+    </div>
+  
+  <div id = "result">
     <div id="mensagem"> </div>
     <div id="mensagem2"> </div>
+  </div>   
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+
   </body>
 </html>
