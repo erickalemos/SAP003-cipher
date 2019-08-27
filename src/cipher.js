@@ -3,17 +3,17 @@ window.cipher = {
   encode: encode,
   decode: decode
 };
-//if (codificar = )
-function encode( codificar, offset) {
+
+function encode( offset, codificar ) {
   let exibir = " ";
   for (let i= 0;i < codificar.length;i++) {
     let alterar = codificar[i].charCodeAt();
     let teste =((alterar-65+offset )% 26)+65;
     exibir += String.fromCharCode(teste);
   }
-  return exibir;//.replace(":"," ")
+  return exibir;
 }
-function decode( decodificar, offset) {
+function decode( offset, decodificar) {
   let exibir2 = " ";
   for (let i= 0;i < decodificar.length;i++) {
     let alterar2 = decodificar[i].charCodeAt();
