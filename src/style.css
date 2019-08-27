@@ -1,29 +1,38 @@
+
 body{
-	background-color: #BFA9A5;	
+	width:800px ;
+	background-color: #BFA9A5;
+	font-family: helvetica, sans-serif;
 }
 
-.box{
-	
-	background: #CDB8B4;
-	font-family: 'Shadows Into Light', cursive;
-	
+#global{
+	width: 400px;
+	background-color:#BFA9A5;
+	margin: 0% 50%;
 }
-#one-left{
-	width:500px;
-	height: 300px;
+	
+#one {
+	width:200px;
+	height: 100px;
 	float: left;
-	
+	background-color:#B3B0CA;
 
 }
-#two-right{
-	width:500px;
-	height: 400px;
-	float:left;
-}
-#three{
+#two {
+	width:200px;
+	height: 100px;
+	float: right;
+	background-color:#B3B0CA;
 	
 }
-#result{
+#three {
+	width:400px;
+	height: 200px;
+	background-color: #e3e3e3; 
+	clear: both;
+	
+}
+#result {
 	
 
 }

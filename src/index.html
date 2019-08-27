@@ -7,6 +7,7 @@
     
   </head>
   <body>
+    <div id= "global">
     <div id="root">
       <h1>Hello world!</h1>
     </div>
@@ -18,22 +19,22 @@
     </div>
     <div id = "two">
       <form>  
-        <label>DECODIFICAR</label>
+        <label>DECODIFICAR</label><br>
         <input type="text" placeholder="Digite sua mensagem aqui" id ="decodificar"><br>
       </form>
   </div>
+  <br>
   <div id = "three">
     <form>  
       <label>CHAVE DE DESLOCAMENTO</label><br>
       <input type="number" placeholder="Digite sua chave" id="offset"><br>
       <button type="button" id="btn" onclick= "clique();clique2()"> Enviar</button>
      <!--<input type="submit" id="botão" = value ="enviar" onclick="clique()"/> <br> -->
-    </div>
-  
-  <div id = "result">
+    </div> 
+
     <div id="mensagem"> </div>
     <div id="mensagem2"> </div>
-  </div>   
+    </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
 
