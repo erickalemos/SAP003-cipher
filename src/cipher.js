@@ -4,22 +4,23 @@ window.cipher = {
   decode: decode
 };
 
-function encode( offset, codificar ) {
-  let exibir = ""; 
-  for (let i= 0;i < codificar.length;i++) {
-    let alterar = codificar[i].charCodeAt();
-    let teste =(( alterar-65+offset)%26)+65;
-    exibir += String.fromCharCode(teste);
+function encode( offset, codeMsg ) {
+  let showMsg = ""; 
+  for (let i= 0;i < codeMsg.length;i++) {
+    let letterNumber = codeMsg[i].charCodeAt();
+    let calc =(( letterNumber-65+offset)%26)+65;
+    showMsg += String.fromCharCode(calc);
   } 
-  return exibir;
+  return showMsg;
 }
 
-function decode( offset, decodificar) {
-  let exibir2 = "";
-  for (let i= 0;i < decodificar.length;i++) {
-    let alterar2 = decodificar[i].charCodeAt();
-    let teste2 = ((alterar2-90-offset)%26)+90;
-    exibir2 += String.fromCharCode(teste2);
+function decode( offset, decodeMsg) {
+  let showMsgTwo = "";
+  for (let i= 0;i < decodeMsg.length;i++) {
+    let letterNumberTwo = decodeMsg[i].charCodeAt();
+    let calcTwo = ((letterNumberTwo-90-offset)%26)+90;
+    showMsgTwo += String.fromCharCode(calcTwo);
   }
-  return exibir2;
+  return showMsgTwo;
 }  
+

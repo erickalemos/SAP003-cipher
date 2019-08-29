@@ -1,3 +1,28 @@
+
+# Cifra de César
+***
+## Resumo do Projeto
+A página cifra de César foi criada para dar acesso aos alunos ao download de listas de exercícios de matemáticas.
+O site serve para codificar ou decodificar um código (somente para letras maiúsculas) de acordo com a chave de acesso dada ao usuário e assim permitir o download da lista.
+Este site é destinado a todo e qualquer aluno que deseja aprimorar seus conhecimentos através da prática de exercícios e problemas. Objetivo do usuário é entender melhor os conceitos matemáticos através da prática.
+O Site resolve o problema do aluno dando acesso ao aluno a novos exercícios. 
+Será utilizado para decifrar um código enviado ao usuário que deseja baixar uma apostila de exercícios de matemática, o aluno recebe uma mensagem para codificar ou decodificar e uma chave.
+
+***
+## Considerações Gerais
+
+O código foi desenvolvido através do JavaScript, HTML e CSS. 
+A página tem um formulário com três campos de entrada, o primeiro o usuário pode inserir a mensagem de codificar, o segundo a mensagem para decofidicar e o terceiro a chave de codificação ou decodificação. Também há um botão que envia a mensagem para ser codificada ou decodificada a partir da chave que foi utilizada e o resultado deste processo aparece no final da página.
+
+Quais são os objetivos do usuário em relação com o produto?
+Decodificar o código de acesso através de uma chave
+
+Como você acredita que o produto está resolvendo os problemas do usuário?
+Quando o usuario recebe através da compra o código e a senha, ele entra no site cifra de cesár e consegue decifrar o código e assim inserir a senha para instalar seu programa.
+
+
+
+
 # Cifra de César
 
 ## Índice
