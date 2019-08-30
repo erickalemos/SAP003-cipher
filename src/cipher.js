@@ -2,41 +2,46 @@ window.cipher = {
   encode: encode,
   decode: decode
 };
-
+//Função de codificação
 function encode(offset, codeMsg) {
-  let resultShowMsg = "";
-  
+  let showMsg = "";
+  //loop for que prossegue codificando até a ultima letra digitada
+  //let showMsg é a variavél que vai printar a msg na tela
+  //let letterNumber transforma a variável em um número
+  //let calc aplica o cálculo da cifra de César 
   for (let i= 0;i < codeMsg.length;i++) {
     let letterNumber = codeMsg[i].charCodeAt();
     let calc =(( letterNumber-65+offset) %26) +65;
+    // condicional if para pegar as letras maiúsculas, else if minúsculas e else para o espaço
     if (letterNumber >= 65 && letterNumber <= 90) {
-      resultShowMsg += String.fromCharCode(calc);
+      showMsg += String.fromCharCode(calc);
     } else if (letterNumber >= 97 && letterNumber <= 122) {
-      let calc2 =(( letterNumber-97+offset) %26) +97;
-      resultShowMsg += String.fromCharCode(calc2);
+      calc =(( letterNumber-97+offset) %26) +97;
+      showMsg += String.fromCharCode(calc);
     } else {
-      let calc3 =(( letterNumber-32+offset) %33) +32;
-      resultShowMsg += String.fromCharCode(calc3);
+      calc =(( letterNumber-32+offset) %33) +32;
+      showMsg += String.fromCharCode(calc);
     }
   }
-  return resultShowMsg;
+  return showMsg;
 }
-
+//Função de decodificação
 function decode(offset, decodeMsg) {
-  let resultShowMsgTwo = "";
+  let showMsgTwo = "";
+  //loop for que prossegue decodificando até a ultima letra digitada
   for (let i= 0;i < decodeMsg.length;i++) {
     let letterNumberTwo = decodeMsg[i].charCodeAt();
     let calcTwo = ((letterNumberTwo-90-offset)%26)+90;
     if (letterNumberTwo >= 65 && letterNumberTwo <= 90) {
-      resultShowMsgTwo += String.fromCharCode(calcTwo);
+      showMsgTwo += String.fromCharCode(calcTwo);
     } else if (letterNumberTwo >= 97 && letterNumberTwo <= 122) {
-      let calcThree =(( letterNumberTwo-122-offset) %26) +122;
-      resultShowMsgTwo += String.fromCharCode(calcThree);
+      let calcTwo =(( letterNumberTwo-122-offset) %26) +122;
+      showMsgTwo += String.fromCharCode(calcTwo);
     } else {
-      let calcFour =(( letterNumberTwo-64-offset) %33) +64;
-      resultShowMsgTwo += String.fromCharCode(calcFour);
+      let calcTwo =(( letterNumberTwo-64-offset) %33) +64;
+      showMsgTwo += String.fromCharCode(calcTwo);
     }
   }
-  return resultShowMsgTwo;
+  return showMsgTwo;
 }  
 
