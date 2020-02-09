@@ -3,43 +3,43 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    
+    <link rel="stylesheet" href="style.css" />  
   </head>
   <body>
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <div class = "global" id= "global">
-    <div id="root">
-      <br>
-      <h1>Decifre sua senha aqui!</h1> <br>
-      <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+      <div id="root">
+        <br><h1>Decifre sua senha aqui!</h1><br>
+      </div>
+      <div class="box" id="one">
+        <form>
+          <label>CODIFICAR</label>
+          <input type="text" placeholder="Digite sua mensagem aqui" id ="codeMsg"><br>
+        </form>
+      </div>
+      <div class= "box" id="two">
+        <form>  
+          <label>DECODIFICAR</label>
+          <input type="text" placeholder="Digite sua mensagem aqui" id ="decodeMsg"><br>
+        </form>
+      </div>
+      <div class = "box" id="three">
+        <form>  
+          <label>CHAVE DE ACESSO</label><br>
+          <input type="number" placeholder="Digite sua chave" id="offset"><br><br>
+          <button type="button" id="btn"> Cifrar</button>
+        </form>
+      </div>   
+      <br> 
+      <div id="msgOne">
+      </div>
+      <div id="msgTwo">
+      </div><br>
     </div>
-    <div class="box" id="one">
-      <form>
-        <label>CODIFICAR</label>
-        <input type="text" placeholder="Digite sua mensagem aqui" id ="codeMsg"><br>
-      </form>
-    </div>
-    <div class= "box" id="two">
-      <form>  
-        <label>DECODIFICAR</label>
-        <input type="text" placeholder="Digite sua mensagem aqui" id ="decodeMsg"><br>
-      </form>
-  </div>
-  <div class = "box" id="three">
-    <form>  
-      <label>CHAVE DE ACESSO</label><br>
-      <input type="number" placeholder="Digite sua chave" id="offset"><br><br>
-      <button type="button" id="btn"> Cifrar</button>
-    </div>   
-    <br> 
-    <div id="msgOne"> </div>
-    <div id="msgTwo"> </div><br>
-   </div>
-   <footer>
-   <a href>Click aqui </a> para iniciar o download! 
-   </footer>
-    <script src="index.js"></script>
-    <script src="cipher.js"></script>
-
+    <footer>
+    <a href>Click aqui </a> para iniciar o download! 
+    </footer>
+      <script src="index.js"></script>
+      <script src="cipher.js"></script>
   </body>
 </html>
